@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Signature&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.contactsec{
+    background-image:url("../../Assets/contact.webp");
+    background-size:cover;
+    background-position:center;
+    height:80vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.contact h1{
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #eee;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  padding: 15px 30px;
+  background: #b89465;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== MOBILE (TABLET + PHONE) ===== */
+@media (max-width: 768px) {
+
+  .contactsec {
+    height: 50vh;
+  }
+
+  .contact h1 {
+    font-size: 36px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column; /* stack inputs */
+  }
+
+  input, textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  button {
+    width: 100%;  /* full width button */
+    padding: 12px;
+  }
+}
+
+
